@@ -1,10 +1,11 @@
 {
   "compilerOptions": {
     "strict": true,
-    "noEmitOnError": true, // This is key - prevents compilation if errors exist
+    "noEmitOnError": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "experimentalDecorators": true
   }
 }
