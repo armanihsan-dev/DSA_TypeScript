@@ -1,0 +1,71 @@
+What is the Two-Pointer Technique?
+The two-pointer technique uses two indices (pointers) that move through a data structure (usually an array) to solve problems more efficiently than using nested loops.
+
+Think of it like: Two people walking through an array, each starting at different positions, moving toward each other or in the same direction based on certain conditions.
+
+Types of Two-Pointer Patterns
+1. Opposite Direction (Left & Right)
+Pointers start at opposite ends and move toward each other
+
+text
+[1, 2, 3, 4, 5, 6, 7, 8]
+ L                    R
+    →              ←
+       →        ←
+          →  ←
+Use Cases:
+
+Container With Most Water
+
+Two Sum (sorted array)
+
+Palindrome checking
+
+Binary search
+
+2. Same Direction (Fast & Slow)
+Both pointers start at the beginning, one moves faster
+
+text
+[1, 2, 3, 4, 5, 6, 7, 8]
+ S
+ F
+    S
+       F
+       S
+             F
+Use Cases:
+
+Finding middle of linked list
+
+Detecting cycles
+
+Removing duplicates
+
+
+
+Instead of:
+
+for (let i = 0; i < n; i++) {}
+
+You use:
+
+let left = 0;
+let right = arr.length - 1;
+
+
+🧩 Movement Logic (VERY IMPORTANT)
+
+You DON’T always move both pointers.
+like this;
+left++;
+right--; // WRONG unless problem demands it
+
+
+Instead do this:
+
+if (condition) {
+  left++;
+} else {
+  right--;
+}
