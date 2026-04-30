@@ -28,8 +28,9 @@ let person: Person = {
     state: 'WB',
   },
 };
-let personArray = [1, 2, { name: 'arman' }];
-let copiedPersonArray = [...personArray];
+type multiArray = [number,number,{name:string}]
+let personArray:multiArray = [1,3,{name:'arman'}];
+let copiedPersonArray:multiArray = [...personArray];
 copiedPersonArray[0] = 132;
 copiedPersonArray[2].name = 'munnu';
 // console.log(personArray);
