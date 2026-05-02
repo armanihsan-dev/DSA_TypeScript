@@ -48,6 +48,7 @@ let pages: number[] = [10, 20, 30, 40];
 
 let students: number = 2;
 console.log(allocateBooks(pages, students)); // 60
+console.log(allocateBooks([12, 34, 67, 90],2))
 // 60 means: "The MINIMUM possible value of the MAXIMUM pages any student gets"
 
 // For [10, 20, 30, 40] with 2 students:
