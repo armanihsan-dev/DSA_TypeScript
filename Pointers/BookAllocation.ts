@@ -45,5 +45,25 @@ function canAllocate(pages: number[], stu: number, mid: number): boolean {
 // let test
 
 let pages: number[] = [10, 20, 30, 40];
+
 let students: number = 2;
 console.log(allocateBooks(pages, students)); // 60
+// 60 means: "The MINIMUM possible value of the MAXIMUM pages any student gets"
+
+// For [10, 20, 30, 40] with 2 students:
+
+// Distribution 1: [10,20] | [30,40]
+// text
+// Student 1 gets: 30 pages
+// Student 2 gets: 70 pages
+// MAXIMUM pages any student gets = 70
+// Distribution 2: [10,20,30] | [40]
+// text
+// Student 1 gets: 60 pages
+// Student 2 gets: 40 pages
+// MAXIMUM pages any student gets = 60
+// Distribution 3: [10] | [20,30,40]
+// text
+// Student 1 gets: 10 pages
+// Student 2 gets: 90 pages
+// MAXIMUM pages any student gets = 90
