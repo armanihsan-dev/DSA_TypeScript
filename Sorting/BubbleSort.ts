@@ -1,6 +1,4 @@
 function bubbleSort(arr: number[]): number[] {
-  let updatedArray: number[] = [];
-
   const sorted = [...arr];
   const n = arr.length;
 
