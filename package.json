@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "ts-run": "tsc --noEmit && ts-node ./decorators/decorators.ts"
+    "ts-run": "tsc --noEmit && ts-node ./Strings/Intro.ts"
   },
   "keywords": [],
   "author": "",

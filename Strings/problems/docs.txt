@@ -1,0 +1,17 @@
+Purpose of This Regex in Palindrome Checker
+This regex is used to clean the string before checking if it's a palindrome. Let me break it down:
+
+javascript
+x.toLowerCase().replace(/[^a-z0-9]/g, '')
+Breaking It Down:
+x.toLowerCase() → Convert all characters to lowercase
+
+.replace(/[^a-z0-9]/g, '') → Remove all characters that are NOT (^) a-z or 0-9
+
+Part	Meaning
+/	Start of regex pattern
+[^...]	Negated character class (match anything NOT in the brackets)
+a-z	Lowercase letters a through z
+0-9	Digits 0 through 9
+/g	Global flag (replace ALL occurrences, not just the first)
+''	Replace with empty string (remove the matched characters)

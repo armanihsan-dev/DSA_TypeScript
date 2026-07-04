@@ -6,6 +6,6 @@
     "strict": true,
     "esModuleInterop": true
   },
-  "include": ["**/*.ts"],
+  "include": ["./Strings/intro.ts"],
   "exclude": ["node_modules"]
 }
