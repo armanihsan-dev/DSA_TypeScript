@@ -15,3 +15,59 @@ a-z	Lowercase letters a through z
 0-9	Digits 0 through 9
 /g	Global flag (replace ALL occurrences, not just the first)
 ''	Replace with empty string (remove the matched characters)
+
+
+
+
+//permutations
+
+Example 3:
+typescript
+s1 = "abc"
+s2 = "bbbca"
+
+Permutations of "abc": ["abc", "acb", "bac", "bca", "cab", "cba"]
+Does s2 contain any?
+"bbbca" → contains "bca" at index 2! ✅
+Result: true
+🤔 Key Insight
+We don't need to generate all permutations!
+
+Instead, think about it differently:
+
+Two strings are permutations of each other if they have the same character frequency
+
+We just need to check if any window of length s1.length in s2 has the same character counts as s1
+
+📊 Character Frequency Approach
+Why This Works:
+text
+s1 = "abc" → {a:1, b:1, c:1}
+Any substring of length 3 in s2 with these same counts is a permutation!
+Example:
+text
+s1 = "abc"
+s2 = "bbbca"
+
+Window 1: "bbb" → {b:3} ❌ Not permutation
+Window 2: "bbc" → {b:2, c:1} ❌ Not permutation  
+Window 3: "bca" → {b:1, c:1, a:1} ✅ PERMUTATION!
+
+
+ Key Insight
+We don't need to generate all permutations!
+
+Instead, think about it differently:
+
+Two strings are permutations of each other if they have the same character frequency
+
+We just need to check if any window of length s1.length in s2 has the same character counts as s1
+
+Example:
+text
+s1 = "abc"
+s2 = "bbbca"
+
+Window 1: "bbb" → {b:3} ❌ Not permutation
+Window 2: "bbc" → {b:2, c:1} ❌ Not permutation  
+Window 3: "bca" → {b:1, c:1, a:1} ✅ PERMUTATION!
