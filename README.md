@@ -3,7 +3,7 @@
 
 <img src="hero-banner.svg" alt="Mastering DSA banner" width="100%" />
 
-<br/>
+<br/>j
 
 <a href="#roadmap">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3000&pause=800&color=3178C6&center=true&vCenter=true&width=650&lines=while(!engineer)+%7B+understand(fundamentals)+%7D;const+edge+%3D+dsa+%2B+typescript+%2B+consistency;type+Engineer+%3D+Omit%3CDeveloper%2C+%22copy-paste%22%3E;" alt="Typing SVG" />
@@ -151,8 +151,14 @@ flowchart TD
 
 ## Repository Structure
 
+<div align="center">
+
+<table>
+  <tr>
+    <td valign="top" width="50%">
+
 ```text
-dsa-in-typescript/
+DSA_TypeScript/
 ├── src/
 │   ├── Arrays/
 │   │   ├── BuySellStock.ts
@@ -161,22 +167,15 @@ dsa-in-typescript/
 │   │   ├── IsPalindrome.ts
 │   │   ├── MaxGap.ts
 │   │   ├── Pow.ts
-│   │   ├── ProductOfArrayExceptItseff.ts
-│   │   └── TwoPoninter.txt
+│   │   └── ProductOfArrayExceptItseff.ts
 │   │
 │   ├── Pointers/
 │   │   ├── AggresiveCows.ts
 │   │   ├── BinarySearch.ts
 │   │   ├── BookAllocation.ts
-│   │   ├── GoodPractices.ts
-│   │   ├── Introduction.ts
 │   │   ├── MinInRotatedSortedArr.ts
-│   │   ├── Notes.txt
-│   │   ├── PeakElementWithoutMountainArray.ts
 │   │   ├── PeakIndexInMountainArray.ts
-│   │   ├── RotatedSortedArray.ts
-│   │   ├── SingleElementInSortedArray.ts
-│   │   └── WallPainting.ts
+│   │   └── SingleElementInSortedArray.ts
 │   │
 │   ├── Recursion/
 │   │   └── Intro.ts
@@ -191,10 +190,6 @@ dsa-in-typescript/
 │   ├── Strings/
 │   │   ├── intro.ts
 │   │   └── problems/
-│   │       ├── docs.txt
-│   │       ├── Freq&Permutation.ts
-│   │       ├── isPalindrome.ts
-│   │       ├── removeOcc.ts
 │   │       ├── ReverseString.ts
 │   │       ├── ReverseWords.ts
 │   │       └── StringCompression.ts
@@ -215,16 +210,37 @@ dsa-in-typescript/
 ├── hero-banner.svg
 ├── index.html
 ├── package.json
-├── package-lock.json
 ├── tsconfig.json
 ├── test.ts
 ├── test.js
-├── commit.sh
-├── .gitignore
-├── keybindings.json
 ├── README.md
 └── node_modules/
 ```
+
+### Current Learning Focus
+
+- Arrays & Strings
+- Two Pointers
+- Recursion
+- Sorting Algorithms
+- Problem Solving Patterns
+- Linked Lists
+- Stacks & Queues
+- Trees & BST
+- Graphs
+- Heaps & Priority Queues
+- Dynamic Programming
+- Backtracking
+- Greedy Logic
+
+### Project Goal
+
+A TypeScript-first DSA journey focused on understanding logic, complexity, and engineering fundamentals beyond AI-generated shortcuts.
+
+  </tr>
+</table>
+
+</div>
 
 This project is currently organized by topic and is steadily expanding into advanced problem-solving areas like linked lists, trees, graphs, heaps, stacks, queues, and dynamic programming.
 
