@@ -4,7 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="test.js" defer></script>
+    <!-- <script src="test.js" defer></script> -->
   </head>
-  <body></body>
+  <body>
+    <script>
+      console.log('RECURSION');
+
+      function printNum(n) {
+        if (n == 1) {
+          console.log(n);
+          return;
+        }
+
+        console.log(n);
+        printNum(n - 1);
+
+        console.log('Hii');
+      }
+      //
+      printNum(4);
+
+      // function nFact(n) {
+      //   if (n <= 1) return 1;
+      //   let fact = 1;
+      //   fact = n * nFact(n - 1);
+      //   return fact;
+      // }
+      // console.log(nFact(4));
+
+      function DG(n) {
+        if (n < 10) return 1;
+        return 1 + DG(Math.floor(n / 10));
+      }
+
+      DG(12345);
+    </script>
+  </body>
 </html>

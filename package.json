@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "ts-run": "tsc --noEmit && ts-node ./Strings/Intro.ts"
+    "ts-run": "tsc --noEmit && ts-node ./Recursion/Intro.ts"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,6 @@
   "devDependencies": {
     "@types/node": "^25.5.0",
     "ts-node": "^10.9.2",
-    "typescript": "^6.0.2"
+    "typescript": "^6.0.3"
   }
 }
