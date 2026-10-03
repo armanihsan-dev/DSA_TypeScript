@@ -22,7 +22,7 @@
         console.log('Hii');
       }
       //
-      printNum(4);
+      //   printNum(4);
 
       // function nFact(n) {
       //   if (n <= 1) return 1;
@@ -37,7 +37,46 @@
         return 1 + DG(Math.floor(n / 10));
       }
 
-      DG(12345);
+      //      DG(12345);
+
+      function binSearch(arr, tar, start, end) {
+        if (start <= end) {
+          let mid = Math.floor((start + end) / 2);
+
+          if (arr[mid] == tar) return mid;
+          else if (arr[mid] < tar) {
+            return binSearch(arr, tar, mid + 1, end);
+          } else {
+            return binSearch(arr, tar, start, mid - 1);
+          }
+        }
+        return -1;
+      }
+
+      function search(arr, tar) {
+        let start = 0;
+        let end = arr.length - 1;
+        return binSearch(arr, tar, start, end);
+      }
+
+      let arr1 = [1, 2, 3, 4, 5, 6];
+      //console.log(search(arr1, 5));
+
+      const getAllSubsets = (nums, ans, i, allSubsets) => {
+        if (i === nums.length) {
+          allSubsets.push([...ans]);
+          return;
+        }
+        getAllSubsets(nums, ans, i + 1, allSubsets);
+        ans.push(nums[i]);
+        getAllSubsets(nums, ans, i + 1, allSubsets);
+        ans.pop();
+      };
+
+      const nums = [1, 2, 3];
+      const allSubsets = [];
+      getAllSubsets(nums, [], 0, allSubsets);
+      console.log(allSubsets);
     </script>
   </body>
 </html>
